@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+    background-image: url('./luca-micheli-ruWkmt3nU58-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+    padding-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.responsive {
+  position: absolute;
+  left: 0;
+  background-color: rgba(15, 15, 16, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover {
+    font-size: 26px;
+}
+
+.brand {
+    color: white;
+    font-size: 22px;
+}
+
+nav {
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 599px) {
+    .display-md {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .bi-list {
+        display: none;
+    }
+
+    .responsive {
+        position: relative;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .responsive a {
+        padding-right: 20px;
+    }
+
+    .nav-links a {
+        color: black;
+    }
+}
